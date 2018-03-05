@@ -1,0 +1,27 @@
+<span class="spacer"></span>
+<i class="fa fa-trash" (click)="onDeleteTask()" title="Click to delete the task"></i>
+<input class="title-input" placeholder="Enter a task description" [(ngModel)]="task.title">
+
+<span *ngIf="task.title.length > 0" class="options">
+    <i class="fa fa-thumbs-up" (click)="onSaveEdits()" title="Click to save edits"></i>
+    <i class="fa fa-undo" (click)="onCancelEdits()" title="Click to cancel edits"></i>
+  </span>
+
+<div class="owner-prompt">For:
+<span *ngIf="users.length === 1">{{currentUserDisplayName}}</span>
+<input *ngIf="users.length > 1"
+       [(ngModel)]="taskOwnerName"
+       [typeahead]="users"
+       typeaheadOptionField="fullName"
+       typeaheadMinLength="0"
+       typeaheadOptionsLimit="5"
+       class="owner-select">
+
+<a class="add-subTask" (click)="onAddSubTask()">+ Add SubTask</a>
+</div>
+
+<ul>
+  <li class="subTask" *ngFor="let subTask of task.subTasks">
+    <app-subtask [task]="task" [subTask]="subTask" [allowEdit]="true" (SubTaskDeleted)="onDeleteSubTask(subTask)"></app-subtask>
+  </li>
+</ul>

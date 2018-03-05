@@ -1,0 +1,7 @@
+<span *ngIf="editTask === false">
+  <app-task-display [task]="task" (startTaskEdit)="onStartTaskEdit(task)"></app-task-display>
+</span>
+
+<span *ngIf="editTask === true">
+  <app-task-edit [task]="task" (endTaskEdit)="onEndTaskEdit(task)"></app-task-edit>
+</span>

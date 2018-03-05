@@ -1,0 +1,127 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  min-width: 400px;
+  overflow: auto;
+}
+
+input::placeholder {
+  color: gray;
+  font-style: italic;
+}
+
+hr {
+  margin-top: 4px;
+  margin-top: 8px;
+}
+
+ul {
+  list-style: none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+li {
+  padding-top: 4px;
+}
+
+
+a {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+i.fa {
+  font-size: 18px;
+  margin-top: 4px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.error {
+  color: #ff7b0b;
+  font-style: italic;
+}
+
+.message {
+  color: gray;
+  font-style: italic;
+}
+
+.betterBox input[type="checkbox"] {
+  display: none;
+}
+
+.betterBox span:before {
+  font-family: "FontAwesome";
+  font-size: 16px;
+  font-style: normal;
+  width: 1em;
+  height: 1em;
+  content: '\f096';
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.betterBox input[type="checkbox"]:checked ~ span:before {
+  content: '\f046';
+  margin-right: 6px;
+}
+
+.betterToggle input[type="checkbox"] {
+  display: none;
+}
+
+.betterToggle span:before {
+  font-family: "FontAwesome";
+  font-size: 20px;
+  font-style: normal;
+  content: '\f0da';
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.betterToggle input[type="checkbox"]:checked ~ span:before {
+  content: '\f0d7';
+  margin-right: 4px;
+}
+
+.regular-text {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+.crossed-out {
+  font-size: 14px;
+  color: gray;
+  text-decoration: line-through;
+  cursor: default;
+}
+
+.title-input {
+  font-size: 14px;
+  width: 75%;
+  margin-top: 4px;
+}
+
+.owner-prompt {
+  margin-left: 40px;
+  margin-right: 2px;
+  font-style: italic;
+  cursor: default;
+}
+
+.options {
+  float: right;
+}
+
+.spacer {
+  margin-left: 20px;
+}
+
+.indent {
+  margin-left: 10%;
+}

@@ -1,0 +1,27 @@
+<div class="filters" >
+  <label> Show </label>
+
+  <span class="spacer"> </span>
+  <label title="Click to filter based on task owner" class="betterBox" >
+    <input type="checkbox" (click)="onToggleOwnerFilter()"  [checked]="onlyMine"/>
+    <span> Only My Tasks </span>
+  </label>
+
+  <span class="spacer"> </span>
+  <label title="Click to filter based on completion status" class="betterBox" >
+    <input type="checkbox" (click)="onToggleStatus()"  [checked]="onlyIncomplete"/>
+    <span> Only Incomplete Tasks </span>
+  </label>
+</div>
+
+<hr/>
+
+<ul>
+  <li class="task" *ngFor="let task of tasks">
+    <div *ngIf="showTask(task)">
+    <app-task [task]="task" (change)="onTaskChange()"></app-task>
+    <hr/>
+    </div>
+  </li>
+</ul>
+

@@ -1,0 +1,10 @@
+.description {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.owner-name {
+  font-size: 12px;
+  cursor: pointer;
+}

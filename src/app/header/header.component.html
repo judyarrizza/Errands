@@ -1,0 +1,13 @@
+<header class='container'>
+  <span class="title">Errand Tracker</span>
+  <span *ngIf="!userService.currentUser" >
+      <input type="text" [(ngModel)]="userName" (keydown)="onKeydown($event)" placeholder="Enter Login Name">
+      <button *ngIf="userName?.length > 0" (click)="onLogin()">Login</button>
+      <a (click)="onSignup()">New User</a>
+  </span>
+  <span *ngIf="userService.currentUser" class=" currentUser">
+    <span class="name">{{userService.currentUser.fullName}}</span>
+      <a (click)="onLogout()">Logout</a>
+  </span>
+
+</header>

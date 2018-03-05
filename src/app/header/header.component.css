@@ -1,0 +1,37 @@
+header {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: gray;
+  cursor: pointer;
+}
+button {
+  border-radius: 4px;
+  height: 22px;
+  font-size: 10px;
+}
+a {
+  float: right;
+  margin-right: 10px;
+  color: lightgray;
+}
+.title {
+  margin: 20px 10px;
+  padding-top:10px;
+  text-align: left;
+  color: lightgray;
+  font-size: 16px;
+}
+.name {
+  font-size: 12px;
+  color: white;
+  margin-right: 10px;
+}
+
+.currentUser {
+  float: right;
+  margin-right: 10px;
+}

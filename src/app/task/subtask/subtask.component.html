@@ -1,0 +1,29 @@
+<span class="indent"> </span>
+
+<span *ngIf="allowEdit === true">
+    <span *ngIf="!subTask.complete">
+      <i class="fa fa-trash" (click)="onDeleteSubTask()" title="Click to delete this SubTask"></i>
+      <input class="title-input" placeholder="Enter a SubTask description" [(ngModel)]="subTask.title">
+    </span>
+</span>
+
+<span *ngIf="allowEdit !== true">
+  <label  *ngIf="belongsToCurrentUser === true"  title="Click to toggle completion status" class="betterBox" >
+    <input type="checkbox" (click)="onToggleSubTaskComplete()" [checked]="subTask.complete"/>
+    <span></span>
+  </label>
+
+  <span *ngIf="belongsToCurrentUser === false">
+    <span class="spacer"> </span>
+  </span>
+
+
+  <span *ngIf="!subTask.complete">
+      <a class="description" class="regular-text" title="SubTask description (click to change)" (click)="onStartEditTask()">{{subTask.title}}</a>
+   </span>
+
+</span>
+
+<span *ngIf="subTask.complete">
+    <span class="description" class="crossed-out">{{subTask.title}}</span>
+</span>
