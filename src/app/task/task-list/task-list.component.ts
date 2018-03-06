@@ -10,7 +10,7 @@ import { UserService } from '../../user/user.service';
    .filters {
      font-size: 14px;
      margin-left: 40px;
-  }`
+   }`
   ]
 })
 export class TaskListComponent implements OnInit {
