@@ -18,10 +18,7 @@ This web application is built using a modern Angular 5 and does not depend on a 
  - Use semantic HTML elements, and try and keep your css organized.  Feel free to iterate on the design and add embellishments such as hover states, etc as you see fit
  - Test coverage, state persistence (localStorage, indexedDB, etc) are a bonus
 
-#### Example Task List
-<img src="https://i.imgur.com/uLhr6fM.png">
-
-## Product Requirements
+## New Product Requirements
 
  - The application must support users with a login field in the header for existing users and a sign-up form for new users.
  - Tasks must be assigned to a user when they are created (from the list of users already signed up and stored in localstorage)
@@ -43,5 +40,7 @@ This web application is built using a modern Angular 5 and does not depend on a 
  - User accounts require a first name, last name and username (the latter is used for logging in and user identification).
 
 #### Wire frames
+<img src="https://github.com/judyarrizza/Errands/blob/master/design_documents/wireframe-signup.png">
+<img src="https://github.com/judyarrizza/Errands/blob/master/design_documents/wireframe-tasks.png">
 
-Wireframes and systems dynamics picture are available in "design_documents" under the root directory.
+Systems dynamics diagrams are available in "design_documents" in sev eral formats.
